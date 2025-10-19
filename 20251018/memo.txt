@@ -1,0 +1,78 @@
+
+①html lang="en"
+
+html = tên thẻ
+lang : attribute
+en : value
+
+②title
+・Rất quan trọng nó liên quan đến SEO
+
+③nêu đat tên file đó là trang chủ
+index.html
+thì khi set up tren server thì ko cần phải thay đổi cài đặt
+
+localhost:8080/index.html
+localhost:8080/
+là như nhau
+
+④câu tạo gồm 2 loại thẻ
+là thẻ đủ và thẻ thiếu
+
+・thẻ đủ
+<tên_thẻ> ... nội dung ... </tên_thẻ>
+exp html, body
+
+・thẻ thiếu
+<tên_thẻ>
+exp: meta
+
+về tính chất
+    -- block : chiếm hết chiều ngang của màn hình (viewport)
+        exp div
+    -- inline : 1 dòng (chữ đi đến đâu nó chiếm đến đó và tự động xuống dòng)
+    exp span
+    -- inline block(*)
+
+    --trang https://htmlreference.io/
+SEO:
+    -- ngu nghĩa
+    div,span ko có nghĩa gì về seo
+
+div:
+    ko có ý nghĩa gì về SEO , ko có ngữ nghĩa
+
+span:
+    ko có ngữ nghĩa
+
+
+heading
+    h1,h2,h3,h4,h5,h6
+
+p
+    đoạn văn
+
+br
+    xuống dòng
+
+img
+    hiển thị hình ảnh , thẻ thiếu (seft-closing)
+    src đường dẫn
+    alt gợi ý hình ảnh
+    width chiều rộng
+    height
+
+thẻ inline sẽ có 1 cái gọi là baseline đường cơ sở
+
+
+
+
+
+
+
+
+
+
+
+
+
