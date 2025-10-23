@@ -64,6 +64,9 @@ img
 
 thẻ inline sẽ có 1 cái gọi là baseline đường cơ sở
 
+ khoảng trắng trái phải do câu lệnh xuống dòng
+ khoảng trắng trên dưới do img là 1 thẻ inline nó hiển thị text
+ muốn nó mất khoảng trắng thì đưa nó vào block , xử lý trong css
 
 
 
