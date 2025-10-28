@@ -61,7 +61,58 @@ boder
 
 table
 -- printer
-form/ input
+form/ input/ button/ lable / select
+
+
+pre
+    --hiển thị đoạn code
+code
+iframe
+    --hiển thị file , link web , link video
+    --link bản đồ
+audio
+    --chèn video
+
+input
+    --thẻ inline ,
+    --placeholder : gợi ý nhập
+    --value : giá trị
+    --name :
+    --type
+        password : hiển thị *
+        text : mặc định
+        number : số
+        email : nhập email , check có @ hay ko
+        submit : nut bam , khi bấm vào check verify đc
+
+form
+    method: phương thức (post/get/put/patch)
+    action: hành động
+
+điều kiện
+    -- thẻ form phải có action + method (nếu ko truyền thì mặc định là Get)
+    -- input type là submit
+diễn ra như sau:
+    khi bấm submit thì dữ liệu đc gửi đến đường link với method đc định nghĩa ở phần trên
+
+Get - dữ liệu gửi qua url
+    -- độ dài url thì có giới hạn
+    -- kém bảo mật
+Post/put/ patch : ko gửi dữ liệu qua url
+
+select-option
+    -- hiển thi danh sách chọn
+    -- nếu option mà ko có value thì sẽ lấy giá trị hiển thị lưu vào data
+
+để tăng trải nhiệm người dùng thì thên thuộc tính for vào label và id vào thẻ input .
+khi click vào lable nó sẽ focus vào mục nhập input
+
+CSS
+    --tất cả thẻ html có css mặc định
+    có 3 cách viết css
+        -- inline css viết trong attribute
+        --
+
 
 -----Buoi 7 2025/11/1
 test html
