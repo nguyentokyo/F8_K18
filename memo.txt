@@ -107,15 +107,70 @@ select-option
 để tăng trải nhiệm người dùng thì thên thuộc tính for vào label và id vào thẻ input .
 khi click vào lable nó sẽ focus vào mục nhập input
 
-CSS
-    --tất cả thẻ html có css mặc định
-    có 3 cách viết css
-        -- inline css viết trong attribute
-        --
-
 
 -----Buoi 7 2025/11/1
 test html
 thuc hanh
 trac nghiem
+
+-----Buoi 8 2025/11/04
+CSS
+    --tất cả thẻ html có css mặc định
+    có 3 cách viết css
+        -- inline css viết trong attribute
+        -- internal : viet css trong cap the <style></style>
+        -- external : viet css ben ngoai
+
+    cú pháp
+    selector {
+        css code
+    }
+
+    selector
+        --có thể là các thẻ h1 h2 h3...
+        --id
+        --class
+
+    style của 1 thẻ sẽ bị ảnh hưởng của nhiều chỗ
+        inline độ bao phủ hẹp
+        internal độ bao phủ toàn html
+        external độ bao phủ toàn bộ project
+
+    mức độ ảnh hưởng sẽ tỉ lệ nghịch với độ bao phủ
+
+    độ ưu tiên
+     inline > internal > external
+
+    sau này dùng các fw thì chủ yếu là internal dùng nhiều
+
+    trong selector có mức độ ưu tiên là
+        id > class > tên thẻ
+
+    độ bao phủ là
+        tên thẻ > class > id
+
+    .parent ul : tất cả các thẻ con cháu đều ảnh hưởng
+    .paren > ul: chỉ những thẻ con trực tiếp bị ảnh hưởng.
+
+
+ 2025/11/08
+
+ selector
+
+ h1, p : cùng cấp
+
+ h1 + p : p cù
+
+ đề bài
+  cho 1 radio btn red , green , yellow
+  bên dưới có đoạn văn
+  viet css để khi bấn red thì màu đỏ, green thì màu xanh , yellow thì màu vàng
+
+
+ em
+ rem
+
+ background-image
+ background-position: top right , 100px  điều chỉnh tọa độ vị trí
+
 

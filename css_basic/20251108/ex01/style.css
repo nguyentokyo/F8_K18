@@ -1,0 +1,48 @@
+/* cùng cấp */
+/*h1, p {*/
+/*    color: red;*/
+/*}*/
+
+/* thẻ cùng cấp ké tiếp */
+/*h1 + p {*/
+/*    color: red;*/
+/*}*/
+
+/* những thẻ cùng cấp đứng sau h*/
+h1 ~ p {
+    color: red;
+}
+
+input[name="name"] {
+    color: red;
+}
+
+input[name="mode"]:checked ~ p {
+    color: red;
+}
+
+input[value='1']:checked ~ p {
+    color: red;
+}
+
+input[value='2']:checked ~ p {
+    color: green;
+}
+
+input[value='3']:checked ~ p {
+    color: yellow;
+}
+
+
+#red:checked ~ p {
+    color: red;
+}
+
+#green:checked ~ p {
+    color: green;
+}
+
+#yellow:checked ~ p {
+    color: gold;
+}
+
