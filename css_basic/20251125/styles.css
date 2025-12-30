@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-bar img {
+    border-radius: 5px;
+}
+
+.header-bar {
+    border-bottom: 1px solid #cccccc;
+
+}
+
+.header-bar .header-bar--content {
+    position: relative;
+    width: 600px;
+    margin: auto;
+}
+
+.header-bar nav {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.header-bar nav > ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.header-bar nav a {
+     text-decoration: none;
+     color: cornflowerblue;
+     padding: 10px;
+ }
+
+.header-bar nav li:hover ~ ul {
+    display: block;
+}
+.header-bar nav li ul {
+    display: none;
+    position: absolute;
+}
+
+.header-bar nav li ul li {
+    display: block;
+    padding: 10px;
+}

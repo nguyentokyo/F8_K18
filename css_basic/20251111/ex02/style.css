@@ -1,0 +1,22 @@
+/* background*/
+/*.box {*/
+/*    width: 400px;*/
+/*    height: 400px;*/
+/*    background-color: red;*/
+/*    background-image: url(logo.png);*/
+/*    background-repeat: no-repeat;*/
+/*    !*background-position: 100px 50px;*!*/
+/*    background-size: contain;       !* zoom ảnh theo chiều dọc*!*/
+/*    !*background-size: cover;       !* zoom ảnh theo chiều dọc*!*!*/
+/*}
+background-color: Thiết lập màu nền cho phần tử.
+background-image: Thiết lập hình ảnh làm nền cho phần tử.
+background-repeat: Thiết lập cách hình nền được lặp lại.
+background-position: Thiết lập vị trí của hình nền trong phần tử.
+background-size: Thiết lập kích thước của hình nền.
+background-attachment: Thiết lập cách hình nền gắn với phần tử khi cuộn trang.
+background-origin: Thiết lập vị trí bắt đầu hiển thị hình nền.
+background-clip: Thiết lập vị trí cắt hình nền khi bị chồng chéo với nội dung phần tử.
+Các thuộc tính này có thể được khai báo riêng lẻ hoặc gộp lại thành một dòng duy nhất để rút gọn cú pháp. Ví dụ: background: #f0e68c url('smiley.png') no-repeat fixed center;
+*/
+

@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.group {
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+}
+
+.box {
+    width: 300px;
+    height: 100px;
+}
+
+.box1 {
+    background-color: #870301;
+}
+
+.box2 {
+    background-color: #c4ff2f;
+}
+
+.box3 {
+    background-color: #ffdd00;
+}

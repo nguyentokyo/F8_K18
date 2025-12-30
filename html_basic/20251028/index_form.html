@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--    <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">-->
+    <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="POST">
+        <input type="checkbox" name="agree" value="yes">
+        <label for="user">USERNAME</label>
+        <label>
+            <input id="user" placeholder="username" value="test@gmail.com" name="user">
+        </label>
+        <br>
+        <label>PW</label>
+        <label>
+            <input placeholder="password" type="password" name="pass">
+            <input placeholder="password" type="text" name="pass">
+        </label>
+        <br>
+        <label>age</label>
+        <label>
+            <input placeholder="age" type="number" name="age">
+        </label>
+        <br>
+        <label>email</label>
+        <label>
+            <input placeholder="email" type="email" name="email">
+        </label>
+        <br>
+        <label></label>
+
+        <span>hay chon dap an dung</span>
+        <br>
+        <input type="checkbox" name="foot[]" value="A">
+        <br>
+        <input type="checkbox" name="foot[]" value="B">
+        <br>
+        <input type="checkbox" name="foot[]" value="C">
+
+        <br>
+        <input type="radio" name="gender" value="men">
+        <br>
+        <input type="radio" name="gender" value="female">
+        <br>
+        <input type="radio" name="gender" value="other">
+
+        <br>
+        <select name="address" id="1">
+            <option value="dev">IT</option>
+            <option value="doctor">Bac Sy</option>
+            <option value="teacher">Giao vien</option>
+        </select>
+        <input type="submit">
+    </form>
+
+    <f1 style="color: blue">tôi tên là cường</f1>
+
+
+<select name="cities" multiple> <option value="hn">Hà Nội</option> <option value="hcm">TP. Hồ Chí Minh</option> <option value="dn">Đà Nẵng</option> </select>
+
+<select name="cities" multiselect> <option value="hn">Hà Nội</option> <option value="hcm">TP. Hồ Chí Minh</option> <option value="dn">Đà Nẵng</option> </select>
+<select name="cities"> <option value="hn" multiple>Hà Nội</option> <option value="hcm" multiple>TP. Hồ Chí Minh</option> <option value="dn" multiple>Đà Nẵng</option> </select>
+
+<form action="/search">
+    <input type="text" name="q" value="hello">
+    <button type="submit">Tìm kiếm</button>
+</form>
+<form>
+    <input type="text">
+    <button type="submit">Send</button>
+</form>
+
+<form id="f1"></form>
+<form id="f2" action="/save" method="POST">
+
+
+</form>
+<form method="POST" action="https://api-gateway.fullstack.edu.vn/action_page.php">
+    <input type="text" name="email" value="a@example.com">
+    <input type="submit" name="action" value="save">
+    <input type="submit" name="action" value="delete">
+</form>
+
+<form id="f1" action="/a" method="GET"></form>
+<form id="f2" action="/b" method="POST"></form>
+
+<input type="text" name="username" form="f2" value="Huy">
+<button type="submit" form="f1">Gửi F1</button>
+</body>
+</html>

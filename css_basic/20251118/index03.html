@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            outline: 0;
+            border: 0;
+        }
+
+        .modal-dialog {
+            /*display: none;*/
+            position: absolute;
+            top: 5%;
+            right: 0;
+            left: 0;
+            z-index: 999;
+            background: #ffffff;
+            border: 1px solid #ccc;
+            width: 80%;
+            margin-inline: auto;
+            padding: 15px;
+        }
+
+        .modal-dialog .modal_heading {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+
+        .modal-dialog .modal_heading h2 {
+            display: inline-block;
+            width: 95%;
+        }
+
+        .modal-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(255, 255, 255, 0.25);
+            z-index: 998;
+        }
+
+        input[id="check"]:checked ~ .modal-dialog {
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>F8-Học lập trình không khó</h1>
+    <p>Đây là trang web F8</p>
+    <label for="check">Model title</label>
+    <input type="checkbox" id="check" value="model">
+    <div class="modal-dialog">
+        <div class="modal_heading">
+            <h2>Modal title</h2>
+            <span>&times;</span>
+        </div>
+        <div class="modal_body">
+            <p>test</p>
+        </div>
+    </div>
+    <div class="modal-overlay">
+    </div>
+</body>
+</html>

@@ -173,4 +173,169 @@ CSS
  background-image
  background-position: top right , 100px  điều chỉnh tọa độ vị trí
 
+ background-color: Thiết lập màu nền cho phần tử.
+ background-image: Thiết lập hình ảnh làm nền cho phần tử.
+ background-repeat: Thiết lập cách hình nền được lặp lại.
+ background-position: Thiết lập vị trí của hình nền trong phần tử.
+ background-size: Thiết lập kích thước của hình nền.
+ background-attachment: Thiết lập cách hình nền gắn với phần tử khi cuộn trang.
+ background-origin: Thiết lập vị trí bắt đầu hiển thị hình nền.
+ background-clip: Thiết lập vị trí cắt hình nền khi bị chồng chéo với nội dung phần tử.
+ Các thuộc tính này có thể được khai báo riêng lẻ hoặc gộp lại thành một dòng duy nhất để rút gọn cú pháp. Ví dụ: background: #f0e68c url('smiley.png') no-repeat fixed center;
+
+position: absolute, relative, fixed, static
+box mode
+flexbox
+
+các thẻ luôn có các thành phần
+- content
+- padding: nằm giữa content và border, không có giá trị âm
+- border : bọc ngoài content
+- margin: nằm ngoài border, khoảng cách giữa các border của các thẻ
+- outline
+
+background của 1 block = pading + content
+
+box1 margin-bottom  10px
+box2 margin-top     10px  -> 10px
+
+box1 margin-top      20px
+box2 margin-top      30px  -> 30px
+
+box1 margin-top      -20px
+box2 margin-top      30px  -> 10px
+
+box1 margin-top      -20px
+box2 margin-top      -30px  -> 20px
+
+------------------------------------------
+Bai 11 2025/11/15(thu7)
+text-center
+padding, margin, border, box model -> inline
+
+
+text-align: center : phần conten hiển thị của nội dung có đủ độ rộng thì nó vẫn hiển thị
+
+thẻ inline sẽ ko có padding tren dưới, ko margin trên dưới
+nên nếu để 1 thẻ block tiếp theo là thẻ inline thì nó sẽ margin của thẻ trên nó sẽ đến thẻ border
+
+thuộc tính box-sizing : border-box : cố định chiều cao , chiều rộng
+
+content-box: width = conten
+boder-box : width = conten + padding + border
+tại vì conten ,padding nằm bên trong border
+
+object-fit
+fill mặc định
+cover khi width của img  > width của img thì ảnh tự scale ngang, chiều cao bị thừ ẩn đi
+        khi width của img < width thì giữ chiều cao , chiều ngang ẩn đi
+
+
+
+--thuộc tính display
+
+thay đổi cách hiển thị của 1 thẻ html
+các giá trị phổ biến
+
+-- none : ẩn phần tử ( mất ko gian chứa phần tử)
+-- visibility : hidden;
+-- opacity : 0 -- ẩn;
+-- ẩn chữ + ẩn ảnh
+
+-- block : dạng khối (giống thẻ block bên html)
+           chuyển thẻ inline thành block
+-- inline : dạng dòng (giống thẻ inline )
+-- inline-block : kết hợp
+            set dc bottom-top , bottom , mang đc thuộc tính của block
+           width, margin, padding
+
+
+--em nếu có font-size thì nó theo font-size, còn ko có font-size thì  nó theo chính nó.
+
+thuộc tính position
+
+mặc định xếp từ trên xuống dưới (nếu là block),
+trái qua phải (nếu là inline)
+
+position : can thiệp để di chuyển các phần từ sang chỗ khác.
+
+các loại position
+
+static: ko có position (sắp xếp mặc định) -
+         - khôi phục lại trạng thái ban đầu. --> ghi đè làm mất position
+relative : tương đối (vị trí ban đầu nó đứng)
+absolute : tuyệt đối (sắp xếp lại bố cục) -- dùng dc width height
+            (co tác dụng bao phủ toàn màn hình)
+            tìm thẻ cha gần nhất có position ko phải static
+fixed: cố định(khi kéo thanh cuộn)
+            giống như absolute,
+            khác chỉ nhận body làm cha
+
+các thuộc tính
+
+position : stact, relative , absolute , fixed
+--top
+--left
+--bottom
+--z-index
+
+--2025/12/27
+
+khai bao bien (declare variable)
+let x, y, z
+
+khoi tao bien (init variable)
+let x = "ss"
+const y = "xx"
+var z = 1;
+
+data type
+number
+    --integer
+    --float
+string
+
+boolean
+    --true, false
+
+Object
+    --array [matrix] : [1,2,3,4]
+    --dictionary : {key:value}
+            -- key : string
+            -- value : any data type
+            exp {
+                    name:"ss"
+                    , age:20
+                    }
+Date
+
+undefined
+
+null
+
+--Ep kieu type casting
+
+2025/12/30
+
+const numbers = [4, 3, 1, 5, 1];
+const copyNumbers = numbers;
+
+copyNumbers[0] = 100
+
+console.log(copyNumbers)
+console.log(numbers)
+
+copyNumbers have been changed --> numbers changed
+
+
+
+
+
+
+
+
+
+
+
+
 

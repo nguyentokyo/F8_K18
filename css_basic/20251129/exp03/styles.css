@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.group {
+    display: flex;
+    background-color: #c6f6f6;
+    border: 10px solid #870301;
+    justify-content: space-evenly;
+
+}
+
+/*#box-1 {*/
+/*    flex-shrink: 1;*/
+/*}*/
+.box {
+    /*background-color: green;*/
+    border: 10px solid green;
+    width: 100px;
+    height: 120px;
+    color: black;
+    font-size: 32px;
+    /*flex-shrink: 0;  !*ko cho co lai*!*/
+    flex-grow: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
