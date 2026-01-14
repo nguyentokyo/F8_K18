@@ -328,6 +328,123 @@ console.log(numbers)
 copyNumbers have been changed --> numbers changed
 
 
+tham trị là tham trị đến biến đó thay đổi giá trị
+tham chiếu là tham chiếu đến vị trí của nó để thay đổi giá trị
+
+// + - * /
+
+
+JS co 8 kieu du lieu
+7 nguyen thuy
+
+1 string
+2 number
+3 boolean
+4 undefined
+5 null
+6 symbol
+7 bigint
+
+⇒ ko the thay doi dc gia tri
+
+8 object
+
+⇒ co the thay doi dc gia tri
+
+
+khi các hàm chạy xong thì các biến gán trong bộ nhớ sẽ giải phóng ra.
+ngôn ngữ bậc cao nên có 1 thứ dọn dẹp hết bộ nhớ ko dòng trong ram.
+
+
+câu lệnh điều kiện
+--if
+
+--if...else
+
+--if...else if...else
+
+--switch
+
+--Toán tử 3 ngôi ternary operator
+
+if(a>b) ? "ket quả đúng" : "ket qua sai";
+
+
+------------
+Toán tử
+toán tử số học : + - * / % ** ++ --
+
+let year = 2025;
+
+console.log(year++);
+⇒ tăng giá trị lên 1 và trả về kết quả giá trị Trước khi tăng
+
+console.log(--year);
+⇒ tăng giá trị lên 1 và trả về kết quả giá trị Sau khi tăng
+
+
+---Toán tử số học
+---Toán tử so sánh
+---Toán tử logic
+
+-----Hàm trong js
+
+
+---2026/01/06
+
+function demo(a, b) {
+    return a + b;
+}
+
+demo : func name
+a, b : param
+return : return value
+
+
+function demo() {
+    console.log("Hello World");
+    return 1;
+}
+
+⇒ hàm này output là 1
+
+
+this là nó chỉ đến đối tượng sinh ra nó
+
+--2026/01/13 tham chieu referencetype
+
+
+
+// for (let i = 0; i < persons.length; i++) {
+//     let isCompany = false;
+//
+//     for (let j = 0; j < companies.length; j++) {
+//         if (persons[i].companyId === companies[j].id) {
+//             console.log(persons[i].name,'--', companies[j].name)
+//             isCompany = true;
+//             break;
+//         }
+//     }
+//
+//     if (!isCompany) {
+//        console.log(persons[i].name);
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

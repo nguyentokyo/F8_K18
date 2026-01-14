@@ -34,8 +34,78 @@ const studentA = {
     age: 20,
     score: [90, 10, 100]
 }
+//
+// console.log(studentA.name)
+// console.log(studentA.score[2])
 
-console.log(studentA.name)
-console.log(studentA.score[2])
+const studentB = studentA
+studentB.name = 'Nguyen2'
+
+console.log(studentA)
+
+
+let a = "10"
+let b = 2
+
+let temp = a + b
+console.log(temp)
+
+
+// - (minus)
+// * (times)
+// / (divide)
+
+//
+// phép hội and &&
+// phép tuyển or ||
+// not ( !)
+// đề cho
+// a = true
+// b = false
+// c = a + b
+//
+// hỏi
+// !a && !b ??? !c
+//
+//
+// !a = false
+// !b = true
+//
+// c= a + b
+// c = false
+// → !c = true
+//
+// !a && !b = false
+// !c = true
+//
+// → (!a && !b) # !c
+
+
+
+let x = true
+let y = false
+let z = x + y
+
+// hỏi
+// !a && !b ??? !c
+
+console.log(z) // 1 true
+
+x = !x
+y = !y
+
+console.log(x && y)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
