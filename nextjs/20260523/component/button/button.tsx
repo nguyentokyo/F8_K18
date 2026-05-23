@@ -7,7 +7,7 @@ export default function BackButton() {
 
     return (
         <button onClick={() => router.back()}>
-            ← Quay lại
+            ← Quay lại bang useRouter
         </button>
     );
 }
