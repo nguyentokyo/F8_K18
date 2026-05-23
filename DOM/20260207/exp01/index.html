@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .color--red {
+            color: red;
+        }
+        .color--green {
+            color: green;
+        }
+        .color--yellow {
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>F8 hoc lap trinh</h1>
+    <p>ban muon mau chu la gi</p>
+<!--    <button id ='red-btn'>do</button>-->
+<!--    <button id ='green-btn'>xanh</button>-->
+<!--    <button id="yellow-btn">vang</button>-->
+    <button id="red">do</button>
+    <button id="green">xanh</button>
+    <button id="yellow">vang</button>
+
+    <script>
+        const h1 = document.querySelector('h1');
+
+        document.querySelectorAll('button').forEach(btn => {
+            btn.onclick = () => {
+                h1.style.color = btn.id;
+            };
+        });
+
+        // const redBtn = document.querySelector('#red-btn');
+        // const greenBtn = document.querySelector('#green-btn');
+        // const yellowBtn = document.querySelector('#yellow-btn');
+        //
+        // redBtn.addEventListener('click', () => {
+        //     const h1 = document.querySelector('h1');
+        //     h1.classList.add('color--red');
+        //     // console.log('click red btn');
+        // })
+        //
+        // greenBtn.addEventListener('click', () => {
+        //     const h1 = document.querySelector('h1');
+        //     h1.classList.add('color--green');
+        // })
+        //
+        // yellowBtn.addEventListener('click', () => {
+        //     const h1 = document.querySelector('h1');
+        //     h1.classList.add('color--yellow');
+        // })
+    </script>
+</body>
+</html>

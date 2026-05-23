@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="main.js"></script>
+</head>
+<!--Bài 1: Thêm đoạn văn-->
+
+<!--Có 1 nút “Add paragraph”-->
+
+<!--Click → tạo <p> có nội dung "Hello DOM" và thêm vào trang-->
+<body>
+<button id="addBtn">Add paragraph</button>
+<div id="container"></div>
+
+<script>
+    // 1. Chọn nút bấm và vùng chứa bằng ID
+    const btn = document.getElementById('addBtn');
+    const container = document.getElementById('container');
+
+    // 2. Thiết lập sự kiện khi click
+    btn.addEventListener('click', () => {
+        // Tạo một phần tử <p> mới
+        const newP = document.createElement('p');
+
+        // Gán nội dung cho phần tử
+        newP.innerHTML = "Hello DOM";
+
+        // 3. Thêm phần tử <p> vào trong thẻ div container
+        container.appendChild(newP);
+    });
+</script>
+</body>
+</html>

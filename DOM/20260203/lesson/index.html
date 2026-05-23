@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+        <div>Demo Table</div>
+        <table border="1" cellspacing="1" width="100%">
+            <thead>
+                <tr>
+                    <th>code</th>
+                    <th>customer</th>
+                    <th>product</th>
+                    <th>amount</th>
+                    <th>status</th>
+                    <th>action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>Laptop</td>
+                    <td>$100</td>
+                    <td>Active</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>John 2</td>
+                    <td>Iphone</td>
+                    <td>$100</td>
+                    <td>Active</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>John 3</td>
+                    <td>Iphone 5</td>
+                    <td>$100</td>
+                    <td>Block</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    <div style="height: 20px"></div>
+    <div>JS table ver 1</div>
+    <main>
+    </main>
+    <div style="height: 20px"></div>
+    <div>JS table ver 2</div>
+    <div id="js2">
+
+    </div>
+<body>
+    <script>
+        const data = [
+            { code: '001', name: "nguyen 1",product: 'Apple', price: 1000, status: 'active'}
+            ,{ code: '002', name: "nguyen 2", product: 'Apple', price: 2000, status: 'active'}
+            ,{ code: '003', name: "nguyen 3", product: 'Apple', price: 2000, status: 'active'}
+            ,{ code: '004', name: "nguyen 4", product: 'Apple', price: 2000, status: 'active'}
+        ];
+
+        const renderTable = () => {
+            const mainE = document.querySelector('main');
+            const tableE = document.createElement('table');
+            const theadE = document.createElement('thead');
+            const bodyE = document.createElement('tbody');
+
+            tableE.setAttribute('border', '1');
+            tableE.setAttribute('cellspacing', '1');
+            tableE.setAttribute('width', '100%');
+
+            theadE.innerHTML = `<tr>
+                                    <th>code</th>
+                                    <th>name</th>
+                                    <th>product</th>
+                                    <th>price</th>
+                                    <th>status</th>
+                                    <th>Action</th>
+                                    </tr>`
+
+            // bodyE.innerHTML = `<tr>
+            //         <td>3</td>
+            //         <td>John 3</td>
+            //         <td>Iphone 5</td>
+            //         <td>$100</td>
+            //         <td>Block</td>
+            //         <td>
+            //             <button>Edit</button>
+            //             <button>Delete</button>
+            //         </td>
+            //     </tr>`
+
+            data.forEach((element, index) => {
+                const trE = document.createElement('tr');
+                trE.innerHTML = `
+                        <td>${element.code}</td>
+                        <td>${element.name}</td>
+                        <td>${element.product}</td>
+                        <td>${element.price}</td>
+                        <td>${element.status}</td>
+                        <td>
+                             <button>Edit</button>
+                             <button>Delete</button>
+                        </td>
+               `
+
+                // bodyE.innerHTML += trE.innerHTML;
+                bodyE.append(trE);
+            })
+
+            tableE.append(theadE);
+            tableE.append(bodyE);
+            mainE.append(tableE);
+        }
+
+        renderTable();
+
+        //ver 2
+        const headers = ['code', 'name', 'address', 'product', 'price', 'status']
+
+        const order = [
+            { code: '001', name: "nguyen 1", address: 'Ha Noi 1' ,product: 'Apple', price: 1000, status: 'active'}
+            ,{ code: '002', name: "nguyen 2", address: 'Ha Noi 2' , product: 'Apple', price: 2000, status: 'active'}
+            ,{ code: '003', name: "nguyen 3", address: 'Ha Noi 3' , product: 'Apple', price: 2000, status: 'active'}
+            ,{ code: '004', name: "nguyen 4", address: 'Ha Noi 4', product: 'Apple', price: 2000, status: 'active'}
+        ];
+
+        const renderOrder = () => {
+            const mainE = document.querySelector('#js2');       // selector ID
+            console.log(mainE);
+            const tableE = document.createElement('table');
+            const theadE = document.createElement('thead');
+            const bodyE = document.createElement('tbody');
+
+            tableE.setAttribute('border', '1');
+            tableE.setAttribute('cellspacing', '1');
+            tableE.setAttribute('width', '100%');
+
+            // theadE.innerHTML = `<tr>
+            //                         <th>code</th>
+            //                         <th>name</th>
+            //                         <th>product</th>
+            //                         <th>price</th>
+            //                         <th>status</th>
+            //                         <th>Action</th>
+            //                         </tr>`
+
+            headers.forEach((element, index) => {
+                const trE = document.createElement('tr');
+                // trE.innerHTML = `${element.code}</td>`
+                console.log(element)
+            })
+
+
+
+            tableE.append(theadE);
+            mainE.append(tableE);
+        }
+
+        renderOrder();
+    </script>
+</body>
+</html>

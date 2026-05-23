@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <style>
+        li {
+            list-style: none;
+        }
+    </style>
+<body>
+    <label for="searchStr">Search Str</label>
+    <input id="searchStr" name="searchStr">
+
+    <main>
+
+    </main>
+
+<script>
+    /*
+    * 1. list 10 cst nay len -> ul - li
+    * 2. khi nhap vao the input -> loc ra nhung khach hang co ten tuong du
+    * vd:
+    *   trong the input nhap chu "Th"
+    *   cst 2, 5, 7, 10 se dc hien
+    * */
+    const customers = [
+        { "id": 1, "name": "Nguyễn Văn An" },
+        { "id": 2, "name": "Trần Thị Bình" },
+        { "id": 3, "name": "Lê Hoàng Cường" },
+        { "id": 4, "name": "Phạm Minh Đức" },
+        { "id": 5, "name": "Võ Thị Hạnh" },
+        { "id": 6, "name": "Đặng Quốc Huy" },
+        { "id": 7, "name": "Bùi Thanh Long" },
+        { "id": 8, "name": "Hoàng Ngọc Mai" },
+        { "id": 9, "name": "Đỗ Anh Quân" },
+        { "id": 10, "name": "Nguyễn Thảo Vy" }
+    ]
+
+    const onMounted = (list) => {
+        const mainE = document.querySelector('main');
+        const ulE = document.createElement('ul');
+
+        mainE.innerHTML = '';
+
+        list.forEach(customer => {
+            const liE = document.createElement('li');
+            liE.textContent = customer.id + ' ' + customer.name;
+            ulE.append(liE);
+        });
+
+        mainE.append(ulE);
+    }
+
+    onMounted(customers);
+
+    // const inputE = document.querySelector('#searchStr')
+    //
+    // inputE.addEventListener('input', (e) => {
+    //     console.log(e.target.value)
+    // })
+    const inputE = document.querySelector('#searchStr')
+
+    inputE.addEventListener('input', (e) => {
+        const timkem = e.target.value.toLowerCase()
+
+        const filtered = customers.filter(c =>
+            c.name.toLowerCase().includes(timkem)
+        );
+
+        onMounted(filtered);
+    });
+
+</script>
+</body>
+</html>

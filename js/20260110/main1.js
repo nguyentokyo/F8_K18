@@ -62,7 +62,7 @@ console.log(minNumber);
 
 console.log("----------lesson6---------")
 
-function getMaxNumber(arr) {
+function getMaxNumber1(arr) {
     if (!(Array.isArray(arr))) {
         return 'ko phai mang';
     }
